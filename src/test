@@ -1,0 +1,24 @@
+1. Javascript căn bản: 2 điểm
+- Định nghĩa một Array object quản lý 5 nhân sự gồm những thông tin sau:
+    - id
+    - name
+    - yearOfBirth
+    - city
+    - Dựa vào thông tin ở bài 1 viết hàm tính tuổi của nhân sự: calAge(yearOfBirth) => Tuổi. (in ra dạng console)
+
+2. Javascript nâng cao: 2 điểm
+    - Viết hàm show ra danh sách nhân sự (bao gồm thông tin cho từng cá nhân): showStaff() => hiển thị ra thông tin của 5 nhân sự.
+    - Viết hàm xoá một nhân sự theo id: deleteStaff(id) => show ra danh sách nhân sự sau khi đã xoá.
+    - Viết hàm sắp xếp thông tin nhân sự theo độ tuổi: sorfStaffByAge(arrayStaff)
+
+3. React component: 2 điểm
+    - Tạo 1 component (App.js) với default state là array object ở bài 1.
+    - Tạo 1 component (Staff.js) show ra danh sách nhân sự dựa trên state từ file (App.js)
+
+4. React function: 2 điểm
+    - Tạo 1 projec tới với chức năng tương tự bài 3 nhưng dùng react hook để lưu trữ state, render.
+
+5. React nâng cao.
+    - Tạo button xoá toàn bộ nhân sự. (Có thể dùng react component hoặc function)
+    - Tạo field và button cho phép add mới 1 nhân sự.
+    

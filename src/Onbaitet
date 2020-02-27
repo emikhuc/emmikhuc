@@ -1,0 +1,16 @@
+- Xu ly chuoi:
+    + includes
+    + toLowerCase()
+- Xu ly mang:
+    + findByIndex()
+    + find()
+    + filter()
+    + map()
+    + concat()
+    + push()
+    + shift()
+    + sort()
+    + plices()
+- kien thuc co ban:
+    + toan tu: >=; <=, !==, ===
+    + dieu kien; if else, switch case, xx ? 1 : 2

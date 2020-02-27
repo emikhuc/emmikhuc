@@ -1,22 +1,52 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+#root{
+  width: 800px;
+  margin: 0 auto;
+  background-color: cadetblue;
+  padding: 10px;
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.App-link {
-  color: #09d3ac;
+.container header a{
+  color: azure;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.is-active{
+  color: red;
+  font-weight: bold;
+}
+.filter {
+  margin: 20px
+}
+.filter input{
+  border: 1px solid grey;
+  margin-right: 10px;
+}
+
+.filter select{
+  border: 1px solid red
+}
+
+.list {
+  margin: 20px;
+  padding: 10px
+}
+
+.list a:link{
+  margin-left: 10px;
+  text-decoration: none;
 }

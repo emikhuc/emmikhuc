@@ -1,0 +1,2 @@
+//Cai git vo project
+cd my-app: git init (file .git will appear)
