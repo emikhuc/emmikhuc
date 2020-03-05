@@ -1,2 +1,36 @@
 //Cai git vo project
-cd my-app: git init (file .git will appear)
+- cd my-app: git init (file .git will appear)
+
+//status
+- untracked files
+- unstaged files: nhung file duoc quan ly boi git nhung chua duoc push len stage 
+- staged files
+- committed files
+=> git status
+
+//move from untracked to staged
+git add src/App3.js
+git add . (move all files)
+
+//kiem tra ai modify
+git log
+
+//.gitignore
+hide info to others => add file name to dependencies in gitignore
+
+//dua cac file vo trang thai chay
+git commit -m "message ex: 27/2/2020-fixed bug"
+
+//dua project len online
+chu ky so: public key (luu tren github), privat key (luu tren may minh)
+kiem tra may da co chu ky so chua: open terminal: ls -a ~/.ssh
+lenh tao chu ky tren terminal: ssh-keygen -t rsa -b 4096 -C "hangktt@adasiaholdings.com"
+check pid tren may: eval "$(ssh-agent -s)"
+add chu ky so vo ssh: ssh-add ~/.ssh/id_rsa
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDplBcLu7b88jc1xK59LzjTZfviz4YsFZdcTzKZSgqHUYufFo2Rt0LDXRuQl8mSP92JFQEi7kSvbH9PQ6zMuJaBrMYK5613G9hpMChZtppOzR5OmZwbJ/CSNHGkm+VqNlg3NiXXRKz/IkeiuWSTs6w9tR2ZKfJulStAqOLHcWDDXBhIRW8ridcPCzvP08ts1j2wHo75eEv2IiEFKys7YJKSPFhDhjSCThsLx9BK1rPiIwc395kbZJX8zRz5rWXTr44ME9K9mslom9UQB0xOX4YqgROAGY7hfLRxvfFrb0Nqzi7RtxOFimqdZ/jaZaIpUdp7q+PFX32ia4HCs7Do4RZZRjHepdpl/X703mW42iwrQgArAL04NaV0lgud+GBFkvHvbpV9XAnoJPDsxrP+Urpbpiav4jS4CqvFLSDh2lhGHlY3rKcKnRlXno0Q8dq3RtkXeuDWIgkxOA0II2njJ2ON+q/vuBbj+Qp7bsF7U5yNyZscrcYHSDKgaGmkleyX/oEOEO5eqmJeMvxHGkukSHWrCvpnIk1NR12Cl8N0L37G4sAL2nU40g2HldotLF2KoNqNDW3NC1n7A1JRJxB9hXhl2rYSeMJoWQxl29/MBeApy+kWZCDilMm1YNnMfEuRABwxNfRQy1BYxk82CFcDcCXGAKl/Q2uSvZAVvzcgvRk7sQ== hangktt@adasiaholdings.com
+
+ssh -T git@github.com
+
+on git hub: copy: git remote add origin git@github.com:emikhuc/ems.git
+git remote => show orgin
+push project to github: git push -u origin master
