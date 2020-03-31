@@ -34,3 +34,22 @@ ssh -T git@github.com
 on git hub: copy: git remote add origin git@github.com:emikhuc/ems.git
 git remote => show orgin
 push project to github: git push -u origin master
+
+
+STORE (state=(expenses, filters))
+- dispatch [action => send DATA to Firebase => reducer (Add(expenses) => update store)  => render]
+
+
+connect -> firebase
+push()
+
+//login
+1.  turn on Login with GG on Firebase
+2. check State login by Firebase => firebase.auth().onAuthStateChanged()
+3. need page LoginPage.js -> component -> button login -> onClick -> dispatch -> action (startLogin) -> component (mapDispatchToProps)
+
+[dispatch(action function) => login button, edit button, etc 
+reducer(state, action) => return new state]
+=> store -> connect with store use connect function
+
+users/id/expenses

@@ -1,7 +1,7 @@
 import React from 'react';
 import ExpenseForm from './ExpenseForm';
 import {connect} from 'react-redux';
-import {addExpense} from '../actions/expenses'
+import {startAddExpense} from '../actions/expenses'
 /*
 1. create a new component name: ExpenseForm.js
 2. form includes: input type="text" name="description", input type="float"
@@ -17,7 +17,7 @@ const AddExpensePage = (props) => {
 
       <h1>Add Expense</h1>
       <ExpenseForm onSubmit ={(expense)=>{
-        props.dispatch(addExpense(expense));
+        props.dispatch(startAddExpense(expense));
         props.history.push("/");
         
       }}/>
@@ -26,3 +26,4 @@ const AddExpensePage = (props) => {
 };
 
 export default connect()(AddExpensePage);
+
